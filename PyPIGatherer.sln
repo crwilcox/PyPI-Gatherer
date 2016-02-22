@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "CloudService", "CloudService\CloudService.ccproj", "{6C0A43EB-5355-442F-A52B-26A435AE35E1}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PyPIWorker", "PyPIWorker\PyPIWorker.pyproj", "{36E3375C-77FC-4D71-B1B1-4FD4FF87E06F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C0A43EB-5355-442F-A52B-26A435AE35E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C0A43EB-5355-442F-A52B-26A435AE35E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C0A43EB-5355-442F-A52B-26A435AE35E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C0A43EB-5355-442F-A52B-26A435AE35E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E3375C-77FC-4D71-B1B1-4FD4FF87E06F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E3375C-77FC-4D71-B1B1-4FD4FF87E06F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E3375C-77FC-4D71-B1B1-4FD4FF87E06F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E3375C-77FC-4D71-B1B1-4FD4FF87E06F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

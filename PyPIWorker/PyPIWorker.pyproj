@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>36e3375c-77fc-4d71-b1b1-4fd4ff87e06f</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{725071e1-96ae-4405-9303-1ba64eff6ebd};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>__init__.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PyPIWorker</Name>
+    <RootNamespace>PyPIWorker</RootNamespace>
+    <InterpreterId>{2d35a9c9-e8ce-454c-b4f6-7ae3c72df09d}</InterpreterId>
+    <InterpreterVersion>3.4</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="config.py" />
+    <Compile Include="PackageInformationWorker\obj\Debug\attach_server.py" />
+    <Compile Include="PackageInformationWorker\obj\Debug\visualstudio_py_debugger.py" />
+    <Compile Include="PackageInformationWorker\obj\Debug\visualstudio_py_repl.py" />
+    <Compile Include="PackageInformationWorker\obj\Debug\visualstudio_py_util.py" />
+    <Compile Include="PackageInformationWorker\obj\Debug\__init__.py" />
+    <Compile Include="PackageInformationWorker\obj\Debug\__main__.py" />
+    <Compile Include="PackageInformationWorker\PyPIHistoricalScraper.py" />
+    <Compile Include="PackageInformationWorker\PyPIPackageInformation.py" />
+    <Compile Include="PackageInformationWorker\__init__.py" />
+    <Compile Include="WorkDiscovery\obj\Debug\attach_server.py" />
+    <Compile Include="WorkDiscovery\obj\Debug\visualstudio_py_debugger.py" />
+    <Compile Include="WorkDiscovery\obj\Debug\visualstudio_py_repl.py" />
+    <Compile Include="WorkDiscovery\obj\Debug\visualstudio_py_util.py" />
+    <Compile Include="WorkDiscovery\obj\Debug\__init__.py" />
+    <Compile Include="WorkDiscovery\obj\Debug\__main__.py" />
+    <Compile Include="WorkDiscovery\PyPIWatcher.py" />
+    <Compile Include="WorkDiscovery\__init__.py" />
+    <Compile Include="__init__.py" />
+    <Content Include="bin\AzureSetup.cfg" />
+    <Content Include="bin\ConfigureCloudService.ps1" />
+    <Content Include="bin\LaunchWorker.ps1" />
+    <Content Include="bin\ps.cmd" />
+    <Content Include="bin\Readme.mht" />
+    <Content Include="PackageInformationWorker\obj\Debug\deployment-updated-pyvenv.cfg" />
+    <Content Include="PackageInformationWorker\obj\Debug\PackageInformationWorker.pyproj.FileListAbsolute.txt" />
+    <Content Include="PackageInformationWorker\obj\Release\PackageInformationWorker.pyproj.FileListAbsolute.txt" />
+    <Content Include="PackageInformationWorker\__pycache__\config.cpython-35.pyc" />
+    <Content Include="PackageInformationWorker\__pycache__\PyPIHistoricalScraper.cpython-35.pyc" />
+    <Content Include="PackageInformationWorker\__pycache__\PyPIPackageInformation.cpython-35.pyc" />
+    <Content Include="requirements.txt" />
+    <Content Include="WorkDiscovery\obj\Debug\deployment-updated-pyvenv.cfg" />
+    <Content Include="WorkDiscovery\obj\Debug\WorkDiscovery.pyproj.FileListAbsolute.txt" />
+    <Content Include="WorkDiscovery\obj\Release\deployment-updated-pyvenv.cfg" />
+    <Content Include="WorkDiscovery\obj\Release\WorkDiscovery.pyproj.FileListAbsolute.txt" />
+    <Content Include="WorkDiscovery\__pycache__\config.cpython-35.pyc" />
+    <Content Include="WorkDiscovery\__pycache__\PyPIWatcher.cpython-35.pyc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="PackageInformationWorker\" />
+    <Folder Include="PackageInformationWorker\obj\" />
+    <Folder Include="PackageInformationWorker\obj\Debug\" />
+    <Folder Include="PackageInformationWorker\obj\Release\" />
+    <Folder Include="PackageInformationWorker\__pycache__\" />
+    <Folder Include="WorkDiscovery\" />
+    <Folder Include="WorkDiscovery\obj\" />
+    <Folder Include="WorkDiscovery\obj\Debug\" />
+    <Folder Include="WorkDiscovery\obj\Release\" />
+    <Folder Include="WorkDiscovery\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env34\">
+      <Id>{2d35a9c9-e8ce-454c-b4f6-7ae3c72df09d}</Id>
+      <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
+      <Version>3.4</Version>
+      <Description>env34 (Python 3.4)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Worker.targets" />
+</Project>
